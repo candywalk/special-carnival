@@ -30,13 +30,18 @@
 
                         <div class="form-group">
                             <label for="type">種別</label>
-                            <input type="number" class="form-control" id="type" name="type" placeholder="1, 2, 3, ...">
+                            <input type="" class="form-control" id="type" name="type" placeholder="">
                         </div>
 
                         <div class="form-group">
                             <label for="detail">詳細</label>
                             <input type="text" class="form-control" id="detail" name="detail" placeholder="詳細説明">
                         </div>
+                        <div class="form-group">
+                            <label for="stock">詳細</label>
+                            <input type="text" class="form-control" id="stock" name="stock" placeholder="個数">
+                        </div>
+
                     </div>
 
                     <div class="card-footer">

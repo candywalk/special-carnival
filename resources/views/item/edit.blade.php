@@ -31,11 +31,7 @@
 
                         <div class="form-group">
                             <label for="type_id">種別</label>
-                            <select class="form-control" id="type" name="type" value="{{$item->type}}">
-                                @foreach($types as $type)
-                                    <option value="{{$type->type_id}}">{{$type->name}}</option>
-                                @endforeach
-                            </select>
+                            <input class="form-control" id="type" name="type" value="{{$item->type}}">
                         </div>
 
                         <div class="form-group">
