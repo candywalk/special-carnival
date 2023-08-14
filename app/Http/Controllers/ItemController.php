@@ -27,7 +27,7 @@ class ItemController extends Controller
         $keyword = $request->input('keyword');
         $query = Item::query();
         if(!empty($keyword)) {
-            $query= Item::where('name','LIKE', "%.$keyword.%")
+            $query= Item::where('name','LIKE', "%$keyword%")
             ->orwhere('type','LIKE',"%$keyword%")
             ->orwhere('detail','LIKE',"%$keyword%");
             $items = $query->get();
