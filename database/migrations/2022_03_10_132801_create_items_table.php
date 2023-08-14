@@ -15,7 +15,7 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->unsigned()->index();
+            $table->bigInteger('user_id')->unsigned()->charset("utf8")->index();
             $table->string('name', 100)->charset("utf8")->index();
             $table->string('status', 100)->default('active');
             $table->string('type')->nullable();
