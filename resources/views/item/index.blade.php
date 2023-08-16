@@ -44,6 +44,7 @@
                                         <button type="submit" class="btn btn-outline-danger mb-3 {{ $item->user->id === \Auth::user()->id ?'' : 'd-none' }}"
                                             onclick='return confirm("削除しますか？")'>削除
                                         </button>
+                                        </form>
                                     </td>
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->name }}</td>
