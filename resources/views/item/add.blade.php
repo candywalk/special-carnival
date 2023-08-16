@@ -38,7 +38,7 @@
                             <input type="text" class="form-control" id="detail" name="detail" placeholder="詳細説明">
                         </div>
                         <div class="form-group">
-                            <label for="stock">詳細</label>
+                            <label for="stock">個数</label>
                             <input type="text" class="form-control" id="stock" name="stock" placeholder="個数">
                         </div>
 
