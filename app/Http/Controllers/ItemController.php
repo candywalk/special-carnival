@@ -49,6 +49,7 @@ class ItemController extends Controller
             // バリデーション
             $this->validate($request, [
                 'name' => 'required|max:100',
+                'stosk'=> 'integer|min:0'
             ]);
 
             // 商品登録
@@ -80,6 +81,10 @@ class ItemController extends Controller
     }
     public function update(Request $request,Item $item)
     {   
+        $this->validate($request, [
+            'name' => 'required|max:100',
+            'stosk'=> 'integer|min:0'
+        ]);
         $item->name = $request->name;
         $item->detail = $request->detail;
         $item->type = $request->type;

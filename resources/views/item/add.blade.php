@@ -39,7 +39,7 @@
                         </div>
                         <div class="form-group">
                             <label for="stock">個数</label>
-                            <input type="text" class="form-control" id="stock" name="stock" placeholder="個数">
+                            <input type="number"min="0" class="form-control" id="stock" name="stock" placeholder="個数">
                         </div>
 
                     </div>
