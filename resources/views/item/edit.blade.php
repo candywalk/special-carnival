@@ -40,8 +40,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="detail">個数</label>
-                            <input type="text" class="form-control" id="stock" name="stock" value="{{$item->stock}}">
+                            <label for="stock">個数</label>
+                            <input type="number"min="0" class="form-control" id="stock" name="stock" value="{{$item->stock}}">
                         </div>
                     </div>
 
