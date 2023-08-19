@@ -49,7 +49,7 @@ class ItemController extends Controller
             // バリデーション
             $this->validate($request, [
                 'name' => 'required|max:100',
-                'stock'=> 'required|integer|min:0',
+                'stock'=> 'required',
             ]);
 
             // 商品登録
@@ -69,8 +69,7 @@ class ItemController extends Controller
     public function destroy(Item $item)
     {
         $item->delete();
-        return redirect()->route('item.index')
-        ->with('message','削除しました。');
+        return redirect()->route('item.index');
     }
 
     public function edit(Request $request ,Item $item)
@@ -83,7 +82,7 @@ class ItemController extends Controller
     {   
         $this->validate($request, [
             'name' => 'required|max:100',
-            'stock'=> 'required|integer|min:0'
+            'stock'=> 'required'
         ]);
         $item->name = $request->name;
         $item->detail = $request->detail;
